@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head >
+<body>
+  
+<h1>Even Odd Fuction</h1> <br> <br>
+
+
+<label for="en">Add Number</label> <br>
+<input type="number"id="oddeven" onkeyup="ischeck()"><span id="msg"></span>
+
+
+<script>
+   function ischeck() {
+    var number=document.getElementById("oddeven").value;
+    if((number % 2)===0){
+        document.getElementById("msg").innerHTML="wow ! even number is appear"
+    } else{
+             document.getElementById("msg").innerHTML="oh! it is an odd number"
+
+    }
+    if(number==""){
+          document.getElementById("msg").innerHTML=""
+    }
+   }
+</script>    
+
+
+
+
+</body>
+</html>
